@@ -10,9 +10,9 @@ if (!isset($conn) || $conn->connect_error) {
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-require_once "src/phpmailer/src/PHPMailer.php";
-require_once "src/phpmailer/src/SMTP.php";
-require_once "src/phpmailer/src/Exception.php";
+require_once __DIR__ . "/src/phpmailer/src/PHPMailer.php";
+require_once __DIR__ . "/src/phpmailer/src/SMTP.php";
+require_once __DIR__ . "/src/phpmailer/src/Exception.php";
 
 if (!isset($_SESSION['email'])) {
     echo "<script>alert('Please login first!'); window.location.href='login.php';</script>";

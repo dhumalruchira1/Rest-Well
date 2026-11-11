@@ -1,6 +1,6 @@
 <?php
 require_once file_exists(__DIR__ . '/src/db.php') ? __DIR__ . '/src/db.php' : '../src/db.php';
-require("fpdf/fpdf.php");
+require(__DIR__ . "/fpdf/fpdf.php");
 
 if (!isset($_GET['id'])) {
     die("Invalid PDF request!");

@@ -51,5 +51,14 @@ yarn-debug.log*
 yarn-error.log*
 error_log
 
+# ==========================================
+# Vendor / Library Dockerfiles (prevent Vercel picking them up)
+# ==========================================
+**/vender/**/Dockerfile
+**/vender/**/Dockerfile-*
+**/vendor/**/Dockerfile
+**/vendor/**/Dockerfile-*
+**/node_modules/**/Dockerfile
+
 # Keep essential project files
 !.gitkeep

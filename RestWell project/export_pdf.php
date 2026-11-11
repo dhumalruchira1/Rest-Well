@@ -14,7 +14,7 @@ $query->bind_param("s", $email);
 $query->execute();
 $res = $query->get_result();
 
-require("fpdf/fpdf.php");
+require(__DIR__ . "/fpdf/fpdf.php");
 
 $pdf = new FPDF();
 $pdf->AddPage();
